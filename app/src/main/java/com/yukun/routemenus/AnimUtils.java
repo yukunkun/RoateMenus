@@ -43,7 +43,7 @@ public class AnimUtils {
                 ObjectAnimator.ofFloat(view, "translationX", translationX, 0),
                 ObjectAnimator.ofFloat(view, "translationY", translationY, 0),
                 ObjectAnimator.ofFloat(view, "scaleX", 1f, 0.1f), //bug
-                ObjectAnimator.ofFloat(view, "scaleY", 1f, 0.1f),
+                ObjectAnimator.ofFloat(view, "scaleY", 1f, 0.1f),//0.1为了避免消失为0，会产生bug
                 ObjectAnimator.ofFloat(view, "alpha", 1f, 0f));
 
         set.setDuration(1 * 400).start();
